@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Photos — Monsum Rabha</title>
+
+  <!-- Fonts & CSS -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+
+  <style>
+    body {
+      background: #000;
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      overflow-x: hidden;
+    }
+
+    /* ===== NAVBAR (same as before) ===== */
+    header.navbar {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 999;
+      backdrop-filter: blur(15px);
+      background: rgba(0, 0, 0, 0.6);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      transition: all 0.3s ease;
+    }
+
+    .navbar .inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 16px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-weight: 600;
+      letter-spacing: 1px;
+      font-size: 1.1rem;
+      color: #fff;
+      cursor: pointer;
+      transition: color 0.3s ease;
+    }
+
+    .logo:hover {
+      color: #ffcc33;
+      text-shadow: 0 0 10px #ffb347;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 24px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      color: #bbb;
+      text-decoration: none;
+      transition: color 0.3s ease, transform 0.3s ease;
+      font-weight: 400;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+      color: #fff;
+      transform: translateY(-2px);
+      text-shadow: 0 0 10px #ffb347;
+    }
+
+    .controls {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .theme-toggle {
+      cursor: pointer;
+      font-size: 1.2rem;
+      user-select: none;
+      transition: transform 0.3s ease;
+    }
+
+    .theme-toggle:hover {
+      transform: rotate(20deg);
+    }
+
+    /* ===== MAIN ===== */
+    .container {
+      padding-top: 120px;
+      text-align: center;
+      animation: fadeIn 1s ease-in;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+      background: linear-gradient(90deg, #ffb347, #ffcc33);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .small {
+      color: #aaa;
+      font-size: 0.95rem;
+      margin-bottom: 25px;
+    }
+
+    .photos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 22px;
+      padding: 0 20px;
+      justify-items: center;
+    }
+
+    .photo {
+      position: relative;
+      overflow: hidden;
+      border-radius: 20px;
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 20px rgba(255,255,255,0.08);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .photo:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px rgba(255,255,255,0.2);
+    }
+
+    .photo img {
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+      object-fit: cover;
+      transition: opacity 0.3s ease;
+    }
+
+    .btn {
+      margin-top: 25px;
+      padding: 14px 32px;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 12px;
+      color: #fff;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      backdrop-filter: blur(12px);
+    }
+
+    .btn:hover {
+      background: linear-gradient(90deg, #ffb347, #ffcc33);
+      color: #000;
+      transform: translateY(-3px);
+      box-shadow: 0 0 20px rgba(255,255,255,0.2);
+    }
+
+    .side-footer {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.4);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="side-footer">© 2025 Monsum Rabha</div>
+
+  <!-- Header -->
+  <header class="navbar">
+    <div class="inner">
+      <div class="logo">MONSUM RABHA</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="anime.html">Show</a></li>
+          <li><a href="music.html">Music</a></li>
+          <li><a class="active" href="photos.html">Photos</a></li>
+          <li><a href="notes.html">Notes</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="controls">
+        <div class="theme-toggle">🌙</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="container">
+    <section class="section reveal">
+      <h1>Photos</h1>
+      <p class="small">A glimpse into my memories. Click below to view my childhood album.</p>
+
+      <div class="photos" id="photosGrid">
+        <div class="photo"><img src="assets/photo1.jpg" alt="Photo 1"></div>
+        <div class="photo"><img src="assets/photo2.jpg" alt="Photo 2"></div>
+        <div class="photo"><img src="assets/photo3.jpg" alt="Photo 3"></div>
+        <div class="photo"><img src="assets/photo4.jpg" alt="Photo 4"></div>
+      </div>
+
+      <div style="margin-top:25px;">
+        <button class="btn" onclick="window.open('https://photos.app.goo.gl/azugchJPbvSFJ3Qd6', '_blank')">
+          📸 Open Album of My Childhood
+        </button>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

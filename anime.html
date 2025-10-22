@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Show — Monsum Rabha</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* cinematic tweaks for anime page */
+    .spotlight{ position:absolute; right:-10%; top:-10%; width:60%; height:60%; background: radial-gradient(ellipse at 20% 10%, rgba(176,139,91,0.06), transparent 30%); filter: blur(26px); pointer-events:none; }
+    body{ background: radial-gradient(circle at 10% 10%, rgba(176,139,91,0.02), transparent 10%), #07080c; }
+    .movie-card{ padding:18px; border-radius:12px; background: linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.02)); box-shadow:0 20px 60px rgba(0,0,0,0.6); transition: transform 320ms }
+    .movie-card:hover{ transform:translateY(-10px) scale(1.02); box-shadow:var(--accent-glow) }
+  </style>
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <div class="background-wrap"></div>
+  <div class="side-footer">© 2025 Monsum Rabha</div>
+
+  <header class="navbar">
+    <div class="inner">
+      <div class="logo">MONSUM RABHA</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="anime.html" class="active">Show</a></li>
+          <li><a href="music.html">Music</a></li>
+          <li><a href="photos.html">Photos</a></li>
+          <li><a href="notes.html">Notes</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="controls"><div class="theme-toggle">🌙</div></div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="spotlight"></div>
+    <section class="section reveal">
+      <h1>Shows — Cinema Mode</h1>
+      <p class="small">Pick a category below to explore.</p>
+
+      <div class="category-grid" style="margin-top:16px; display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:12px">
+        <a class="movie-card" href="anime-series.html"><h3>Anime Series</h3><p class="small">Seasonal & long-running series.</p></a>
+        <a class="movie-card" href="anime-movies.html"><h3>Anime Movies</h3><p class="small">Feature films & classics.</p></a>
+        <a class="movie-card" href="tv-shows.html"><h3>TV Shows</h3><p class="small">TV dramas and series.</p></a>
+        <a class="movie-card" href="bollywood.html"><h3>Bollywood</h3><p class="small">Indian cinema favorites.</p></a>
+        <a class="movie-card" href="hollywood.html"><h3>Hollywood</h3><p class="small">Blockbusters & favourites.</p></a>
+        <a class="movie-card" href="cartoons.html"><h3>Cartoons</h3><p class="small">Classic & modern cartoons.</p></a>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>

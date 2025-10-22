@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Music — Monsum Rabha</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <div class="background-wrap"></div>
+  <div class="side-footer">© 2025 Monsum Rabha</div>
+
+  <header class="navbar">
+    <div class="inner">
+      <div class="logo">MONSUM RABHA</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="anime.html">Show</a></li>
+          <li><a href="music.html" class="active">Music</a></li>
+          <li><a href="photos.html">Photos</a></li>
+          <li><a href="notes.html">Notes</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="controls"><div class="theme-toggle">🌙</div></div>
+    </div>
+  </header>
+
+  <main class="container music-section">
+    <section class="section reveal">
+      <h1>Music — Playlists & Tracks</h1>
+      <p class="small">Click a song to load it into the player below. Replace track IDs with your favourites.</p>
+
+      <div class="music-grid">
+        <!-- 10 songs -->
+        <div class="music-card song-card" data-track="4ELAXKFJenP29lnpWtobYI">MAJULI</div>
+        <div class="music-card song-card" data-track="1Qt0OGUUPibpmk1FpFQ43m">GIVE ME SOME SUNSHINE</div>
+        <div class="music-card song-card" data-track="3SmSv2sa0hvzxKLXZz4iVk">TERI DEEWANI</div>
+        <div class="music-card song-card" data-track="0xR7mDlVkJK4ypBVA5nroz">CAN'T HELP FALL IN LOVE</div>
+        <div class="music-card song-card" data-track="7dK0fK4V9z5rQd7e2C9F5X">HEY LOVER!</div>
+        <div class="music-card song-card" data-track="1YYhDizHx7PnDhAhko6cDS">TAKE ME HOME, COUTNTRY ROADS</div>
+        <div class="music-card song-card" data-track="4oHQ8n9OKQ3599e8noCrDX">I THINK THEY CALL THIS LOVE</div>
+        <div class="music-card song-card" data-track="4S1VYqwfkLit9mKVY3MXoo">FOREVER YOUNG</div>
+        <div class="music-card song-card" data-track="1wAj295BWDUClM0Ndecs4o"> BLUE</div>
+        <div class="music-card song-card" data-track="1ko2lVN0vKGUl9zrU0qSlT">JUST TWO OF US</div>
+      </div>
+
+      <div style="margin-top:16px">
+        <iframe id="spotifyPlayer" class="spotify" src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO1WVwbP" allow="encrypted-media"></iframe>
+      </div>
+
+      <h3 style="margin-top:18px">Playlists</h3>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:12px; margin-top:12px">
+        <iframe src="https://open.spotify.com/embed/artist/4P058jsAVBYyYxJO684Aet" class="spotify" style="min-height:100px"></iframe>
+        <iframe src="https://open.spotify.com/embed/artist/3up6Gqw9IAsQ9KqLzVkyTN" class="spotify" style="min-height:100px"></iframe>
+        <iframe src="https://open.spotify.com/embed/artist/5CooVwBmzxUe43rWrVhgkS" class="spotify" style="min-height:100px"></iframe>
+        <iframe src="https://open.spotify.com/embed/artist/4YRxDV8wJFPHPTeXepOstw" class="spotify" style="min-height:100px"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>

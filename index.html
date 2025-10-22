@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Monsum Rabha — Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <div class="background-wrap"></div>
+  <div class="side-footer">© 2025 Monsum Rabha</div>
+
+  <!-- NAV -->
+  <header class="navbar">
+    <div class="inner">
+      <div style="display:flex;align-items:center;gap:12px">
+        <div class="logo">MONSUM RABHA</div>
+      </div>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="anime.html">Show</a></li>
+          <li><a href="music.html">Music</a></li>
+          <li><a href="photos.html">Photos</a></li>
+          <li><a href="notes.html">Notes</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="controls">
+        <div class="theme-toggle">🌙</div>
+        <div class="burger" id="burgerBtn">☰</div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- hero -->
+    <section class="hero reveal">
+      <div class="hero-left">
+        <h1>Explore, Listen & Create
+          <span class="sliding-words">
+            <span>anime • music • notes</span>
+            <span>memories • playlists</span>
+            <span>photos • learning</span>
+            <span>projects • growth</span>
+          </span>
+        </h1>
+        <p>A soft black space where I share notes, playlists, shows and memories.</p>
+
+        <div style="margin-top:16px; display:flex; gap:10px; flex-wrap:wrap;">
+          <button class="btn" onclick="location.href='anime.html'">Shows</button>
+          <button class="btn" onclick="location.href='music.html'">Music</button>
+          <button class="btn" onclick="location.href='photos.html'">Photos</button>
+          <button class="btn" onclick="location.href='notes.html'">Notes</button>
+          <button class="btn" onclick="location.href='contact.html'">Contact</button>
+        </div>
+
+        <div class="search-row" style="margin-top:18px">
+          <input id="search-input" placeholder="Search site (anime, notes, music)">
+          <button id="search-btn">Search</button>
+          <div id="search-history" class="search-history"></div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="slideshow">
+          <img src="assets/hero1.jpg" alt="hero1" class="active">
+          <img src="assets/hero2.jpg" alt="hero2">
+          <img src="assets/hero3.jpg" alt="hero3">
+        </div>
+      </div>
+    </section>
+
+    <!-- cards -->
+    <section class="cards reveal">
+      <a class="card" href="about.html">
+      <div class="card">
+        <img src="assets/card1.jpg" alt="about">
+        <div class="card-content">
+          <h3>About Me</h3>
+          <p>A glimpse into my journey, and the path I'm building.</p>
+        </div>
+        <div class="card-footer"><span>About</span><small class="small">A glimpse into my journey</small></div>
+      </div>
+    </a>
+     <a class="card" href="notes.html">
+      <div class="card">
+        <img src="assets/card2.gif" alt="notes">
+        <div class="card-content">
+          <h3>Notes</h3>
+          <p>My CS notes — organized by semester.</p>
+        </div>
+        <div class="card-footer"><span>Notes</span><small class="small">My notes are on the way</small></div>
+      </div>
+     </a> 
+      <a class="card" href="about.html">
+      <div class="card">
+        <img src="assets/card3.jpg" alt="contact">
+        <div class="card-content">
+          <h3>Contact</h3>
+          <p>Let's connect, collaborate and grow together.</p>
+        </div>
+        <div class="card-footer"><span>Contact</span><small class="small">Let's connect</small></div>
+      </div>
+    </a>
+    </section>
+
+    <!-- quick music player -->
+    <section class="section music-section reveal">
+      <a class="card" href="about.html">
+      <h2>Quick music player</h2>
+      <p class="small">Click a song card to load it into the player below.</p>
+
+      <div class="music-grid" style="margin-top:12px">
+        <div class="music-card song-card" data-track="7KGYSXZ3gvQEhaBAxnorAZ">790001</div>
+        <div class="music-card song-card" data-track="4dHdqpGaO9km4TEw9nNQSR">LINE WITHOUT A HOOK</div>
+        <div class="music-card song-card" data-track="1wAj295BWDUClM0Ndecs4o">BLUE</div>
+        <div class="music-card song-card" data-track="1rfofaqEpACxVEHIZBJe6W">Song 4</div>
+      </div>
+
+      <div style="margin-top:12px">
+        <iframe id="spotifyPlayer" class="spotify" src="https://open.spotify.com/embed/track/0rtU1qJaZ7om3SeRKWHpr9"" allow="encrypted-media"></iframe>
+      </div>
+    </a>
+    </section>
+
+    <!-- photos preview -->
+    <section class="section reveal">
+      <a class="Photos" href="photos.html">
+      <h2>Photos</h2>
+      <div class="photos" id="photosGrid">
+        <div class="photo"><img src="assets/photo1.jpg" alt=""></div>
+        <div class="photo"><img src="assets/photo2.jpg" alt=""></div>
+        <div class="photo"><img src="assets/photo3.jpg" alt=""></div>
+        <div class="photo"><img src="assets/photo4.jpg" alt=""></div>
+      </div>
+    </a>
+    </section>
+
+  </main>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
